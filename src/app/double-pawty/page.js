@@ -53,15 +53,16 @@ const seedContent = () => {
   return (
     <>
       <p>
-        You know the fact that a dog's age is roughly 7 times a human's age. Do
-        you know though a very important date that comes with that?
+        {
+          "You know the fact that a dog's age is roughly 7 times a human's age. Do you know though a very important date that comes with that?"
+        }
       </p>
       <p>
-        Learn the exact day you and your puppy will be the same age. Just enter
-        your birthday and your dog's birthday, and we'll reveal the date of the
-        Double Pawty!
+        {
+          "Learn the exact day you and your puppy will be the same age. Just enter your birthday and your dog's birthday, and we'll reveal the date of the Double Pawty!"
+        }
       </p>
-      <p>*No data is stored anywhere.</p>
+      <p>No data is stored anywhere.</p>
     </>
   );
 };
