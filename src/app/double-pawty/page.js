@@ -6,6 +6,7 @@ import { useState } from "react";
 import Profile from "./Profile";
 
 import { calculatePawtyDate } from "./utils";
+import { format } from "date-fns";
 
 export default function Page() {
   const [dogBirthday, setDogBirthday] = useState();
@@ -14,9 +15,9 @@ export default function Page() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4 space-y-4">
-      <div className="flex flex-col items-center space-y-2">
-        <h2 className="text-2xl font-bold">Double Pawty 🐾</h2>
-      </div>
+      <h1 className="text-4xl md:text-6xl font-bold text-foreground">
+        🐾 Double Pawty 🐾
+      </h1>
       <div className="flex flex-col items-center justify-center space-y-4 md:space-y-0 md:flex-row md:justify-between md:w-full md:max-w-3xl">
         <Profile
           {...{
@@ -24,6 +25,7 @@ export default function Page() {
             setBirthday: setDogBirthday,
             prompt: "Dog's birthday",
             imageUrl: "./double-pawty/dog.png",
+            isFinished: result ? 1 : 0,
           }}
         />
         <Profile
@@ -32,41 +34,41 @@ export default function Page() {
             setBirthday: setHumanBirthday,
             prompt: "Human's birthday",
             imageUrl: "./double-pawty/human.png",
+            isFinished: result ? 1 : 0,
           }}
         />
       </div>
-      <Button
-        onClick={() =>
-          setResult(calculatePawtyDate(dogBirthday, humanBirthday))
-        }
-      >
-        Reveal the date
-      </Button>
-      <div className="w-full max-w-md">
-        {result ? resultContent(result) : seedContent()}
+      {result ? null : (
+        <Button
+          disabled={!dogBirthday || !humanBirthday}
+          onClick={() =>
+            setResult(calculatePawtyDate(dogBirthday, humanBirthday))
+          }
+        >
+          Reveal the date
+        </Button>
+      )}
+
+      <div className="w-full max-w-md text-center space-y-4">
+        {result ? (
+          <>
+            <p className="text-xl font-semibold">{`You and your puppy are both ${`${Math.floor(
+              result.age
+            )} years ${Math.floor(
+              (result.age % 1) * 12
+            )} months`} old on ${format(result.sameAgeDate, "PPP")}`}</p>
+          </>
+        ) : (
+          <>
+            <p className="text-xl font-semibold">
+              Learn the exact day you and your puppy will be the same age.
+            </p>
+            <p className="text-sm">
+              PS: Of course, no data is stored or sent to anywhere.
+            </p>
+          </>
+        )}
       </div>
     </div>
   );
 }
-
-const seedContent = () => {
-  return (
-    <>
-      <p>
-        {
-          "You know the fact that a dog's age is roughly 7 times a human's age. Do you know though a very important date that comes with that?"
-        }
-      </p>
-      <p>
-        {
-          "Learn the exact day you and your puppy will be the same age. Just enter your birthday and your dog's birthday, and we'll reveal the date of the Double Pawty!"
-        }
-      </p>
-      <p>No data is stored anywhere.</p>
-    </>
-  );
-};
-
-const resultContent = (result) => {
-  return <p>{`Date: ${result.sameAgeDate}`}</p>;
-};

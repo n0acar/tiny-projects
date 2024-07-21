@@ -60,6 +60,7 @@ function DatePicker({
       components={{
         Dropdown: ({ value, onChange, children, ...props }) => {
           const options = React.Children.toArray(children);
+          console.log(options);
           const selected = options.find((child) => child.props.value === value);
           const handleChange = (value) => {
             const changeEvent = {
