@@ -33,7 +33,7 @@ const Profile = ({ prompt, birthday, setBirthday, imageUrl }) => {
             selected={birthday}
             onSelect={setBirthday}
             fromYear={1950}
-            toYear={2030}
+            toDate={new Date()}
           />
         </PopoverContent>
       </Popover>
