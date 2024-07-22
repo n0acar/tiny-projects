@@ -41,9 +41,10 @@ export default function Page() {
       {result ? null : (
         <Button
           disabled={!dogBirthday || !humanBirthday}
-          onClick={() =>
-            setResult(calculatePawtyDate(dogBirthday, humanBirthday))
-          }
+          onClick={() => {
+            setResult(calculatePawtyDate(dogBirthday, humanBirthday));
+            window.splitbee.track("double-pawty_reveal_the_date_clicked");
+          }}
         >
           Reveal the date
         </Button>
