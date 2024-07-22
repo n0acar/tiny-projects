@@ -40,11 +40,11 @@ export default function Page() {
       </div>
       {result ? null : (
         <Button
+          data-splitbee-event="double-pawty_reveal_the_date_clicked"
           disabled={!dogBirthday || !humanBirthday}
-          onClick={() => {
-            setResult(calculatePawtyDate(dogBirthday, humanBirthday));
-            window.splitbee.track("double-pawty_reveal_the_date_clicked");
-          }}
+          onClick={() =>
+            setResult(calculatePawtyDate(dogBirthday, humanBirthday))
+          }
         >
           Reveal the date
         </Button>
