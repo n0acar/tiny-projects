@@ -106,7 +106,7 @@ const ColorSpace = ({ type, color, setColor, moveType, isFirst, isLast }) => {
             }
           }
         }}
-        className={`font-bold text-3xl lg:text-xl text-center  ${
+        className={`font-bold text-xl text-center  ${
           invalidColor ? "bg-red-500" : "bg-transparent"
         } h-12 w-full ${
           isDark(color) ? "text-white" : "text-black"
