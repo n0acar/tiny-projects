@@ -90,9 +90,7 @@ const ColorSpace = ({ type, color, setColor, moveType, isFirst, isLast }) => {
         transition: "background-color 0.5s ease",
         backgroundColor: formattedColor,
       }}
-      className={`${
-        isDark(color) ? "border-white" : "border-black"
-      } border-b-2 border-r-0 lg:border-r-2 lg:border-b-0 flex flex-col justify-center items-center`}
+      className={`flex flex-col justify-center items-center`}
     >
       <Input
         type="text"
