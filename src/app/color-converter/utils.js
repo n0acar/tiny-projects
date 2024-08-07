@@ -28,7 +28,6 @@ export function convert(color, type) {
 }
 
 export function formatToCss(color) {
-  console.log(color, formatCss(color));
   return formatCss(color);
 }
 

@@ -1,6 +1,7 @@
 export const metadata = {
-  title: "Online Color Converter",
-  description: "Convert colors easily at once",
+  title: "Online Color Converter - HEX, RGB, HSL, OKLCH, and LCH",
+  description:
+    "Effortlessly convert colors between HEX, RGB, HSL, OKLCH, and LCH formats at once.",
   keywords: ["hex", "okhcl", "rgb", "hsl", "color", "converter"],
   openGraph: {
     images: "./tiny/color-converter/og.png",
