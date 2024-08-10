@@ -31,28 +31,6 @@
     --chart-5: 27 87% 67%;
   }
 
-  .aqua {
-    --border: 218.61 10.5% 88.59%;
-    --input: 218.61 10.5% 88.59%;
-    --ring: 218.61 10.5% 88.59%;
-    --background: 218.61 52.51% 42.94%;
-    --foreground: 218.61 10.5% 88.59%;
-    --primary: 181.79 92.86% 49.41%;
-    --primary-foreground: 181.41 99.54% 16.7%;
-    --secondary: 274.41 30.91% 56.86%;
-    --secondary-foreground: 274.41 6.18% 11.37%;
-    --destructive: 5.07 100% 70.34%;
-    --destructive-foreground: 4.54 23.99% 14.51%;
-    --muted: 218.61 45.16% 36.93%;
-    --muted-foreground: 218.61 10.5% 88.59%;
-    --accent: 47.06 100% 80%;
-    --accent-foreground: 47.06 20% 16%;
-    --popover: 218.61 52.51% 42.94%;
-    --popover-foreground: 218.61 10.5% 88.59%;
-    --card: 218.61 52.51% 42.94%;
-    --card-foreground: 218.61 10.5% 88.59%;
-  }
-
   .dark {
     --background: 217 50% 10%;
     --foreground: 217 5% 90%;

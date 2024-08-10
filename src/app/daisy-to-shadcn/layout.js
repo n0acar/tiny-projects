@@ -1,5 +1,7 @@
 import ThemeProvider from "@/components/theme-provider";
 
+import "./local.css";
+
 export const metadata = {
   title: "Shadcn UI with Daisy UI themes",
   description: "Amazing themes from Daisy UI in your Shadcn UI components",
@@ -17,9 +19,36 @@ export default function RootLayout({ children }) {
       attribute="class"
       defaultTheme="system"
       enableSystem
+      themes={themes}
       disableTransitionOnChange
     >
       {children}
     </ThemeProvider>
   );
 }
+
+const themes = [
+  "aqua",
+  "black",
+  "bumblebee",
+  "cmyk",
+  "corporate",
+  "cupcake",
+  "cyberpunk",
+  "dark",
+  "dracula",
+  "emerald",
+  "fantasy",
+  "forest",
+  "garden",
+  "halloween",
+  "light",
+  "lofi",
+  "luxury",
+  "pastel",
+  "retro",
+  "synthwave",
+  "valentine",
+  "wireframe",
+  "winter",
+];
