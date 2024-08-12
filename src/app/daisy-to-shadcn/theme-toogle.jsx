@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Check } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { cn } from "@/lib/utils";
@@ -16,7 +16,7 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 function ThemeToggle() {
-  const { setTheme, themes } = useTheme();
+  const { setTheme, themes, theme: currentTheme } = useTheme();
 
   return (
     <DropdownMenu>
@@ -34,7 +34,7 @@ function ThemeToggle() {
               key={theme}
               onClick={() => setTheme(theme)}
             >
-              <ThemeItem theme={theme} />
+              <ThemeItem theme={theme} selected={currentTheme === theme} />
             </DropdownMenuItem>
           ))}
         </ScrollArea>
@@ -45,9 +45,10 @@ function ThemeToggle() {
 
 export default ThemeToggle;
 
-function ThemeItem({ theme }) {
+function ThemeItem({ theme, selected }) {
   return (
     <div className="flex justify-between m-2  w-full">
+      {selected && <Check className="h-4 w-4" />}
       <span className="font-semibold text-foreground">{theme}</span>
       <span className="grid grid-cols-3 gap-[0.1rem] ">
         <span className="w-2 h-full bg-primary rounded-md"></span>
