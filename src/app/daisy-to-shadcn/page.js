@@ -12,7 +12,7 @@ export default function Page() {
           <CopyDialog />
         </div>
       </div>
-      <div className="bg-secondary p-16">
+      <div className="bg-secondary p-2 md:p-16 ">
         <MusicPage />
       </div>
     </>
