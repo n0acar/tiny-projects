@@ -1,6 +1,7 @@
 import ThemeToggle from "./theme-toogle";
-import CopyDialog from "./copy-dialog";
 import MusicPage from "./(music)";
+import CopyDialog from "./copy-dialog";
+import Instructions from "./instructions";
 
 export default function Page() {
   return (
@@ -12,8 +13,11 @@ export default function Page() {
           <CopyDialog />
         </div>
       </div>
-      <div className="bg-secondary p-2 md:p-16 ">
+      <div className="bg-muted p-2 md:px-16 md:py-8">
         <MusicPage />
+      </div>
+      <div className="p-2 md:px-16 md:py-8 flex justify-center">
+        <Instructions />
       </div>
     </>
   );

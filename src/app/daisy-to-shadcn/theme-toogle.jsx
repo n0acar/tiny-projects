@@ -27,10 +27,13 @@ function ThemeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="bg-muted" align="end">
-        <ScrollArea className="h-72 w-48">
+        <ScrollArea className="h-72 w-56">
           {themes.map((theme) => (
             <DropdownMenuItem
-              className={cn("m-2 bg-background focus:bg-background", theme)}
+              className={cn(
+                "rounded-lg m-2 bg-background focus:bg-background",
+                theme
+              )}
               key={theme}
               onClick={() => setTheme(theme)}
             >

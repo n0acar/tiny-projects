@@ -21,6 +21,7 @@
     --popover-foreground: 219 11% 89%;
     --card: 219 53% 43%;
     --card-foreground: 219 11% 89%;
+    --radius: 0.5rem;
   }
   .black {
     --border: 224 0% 84%;
@@ -42,6 +43,7 @@
     --popover-foreground: 224 0% 84%;
     --card: 0 0% 0%;
     --card-foreground: 224 0% 84%;
+    --radius: 0;
   }
   .bumblebee {
     --border: 224 -35% 20%;
@@ -63,6 +65,7 @@
     --popover-foreground: 224 -35% 20%;
     --card: 0 0% 100%;
     --card-foreground: 224 -35% 20%;
+    --radius: 0.5rem;
   }
   .cmyk {
     --border: 224 -35% 20%;
@@ -84,6 +87,7 @@
     --popover-foreground: 224 -35% 20%;
     --card: 0 0% 100%;
     --card-foreground: 224 -35% 20%;
+    --radius: 0.5rem;
   }
   .corporate {
     --border: 233 27% 13%;
@@ -105,6 +109,7 @@
     --popover-foreground: 233 27% 13%;
     --card: 0 0% 100%;
     --card-foreground: 233 27% 13%;
+    --radius: 0.125rem;
   }
   .cupcake {
     --border: 280 46% 14%;
@@ -126,6 +131,7 @@
     --popover-foreground: 280 46% 14%;
     --card: 24 33% 97%;
     --card-foreground: 280 46% 14%;
+    --radius: 1.9rem;
   }
   .cyberpunk {
     --border: 55 20% 13%;
@@ -147,6 +153,7 @@
     --popover-foreground: 55 20% 13%;
     --card: 56 100% 64%;
     --card-foreground: 55 20% 13%;
+    --radius: 0;
   }
   .dark {
     --border: 220 13% 69%;
@@ -168,6 +175,7 @@
     --popover-foreground: 220 13% 69%;
     --card: 212 18% 14%;
     --card-foreground: 220 13% 69%;
+    --radius: 0.5rem;
   }
   .dracula {
     --border: 60 30% 96%;
@@ -189,6 +197,7 @@
     --popover-foreground: 60 30% 96%;
     --card: 231 15% 18%;
     --card-foreground: 60 30% 96%;
+    --radius: 0.5rem;
   }
   .emerald {
     --border: 219 20% 25%;
@@ -210,6 +219,7 @@
     --popover-foreground: 219 20% 25%;
     --card: 0 0% 100%;
     --card-foreground: 219 20% 25%;
+    --radius: 0.5rem;
   }
   .fantasy {
     --border: 215 28% 17%;
@@ -231,6 +241,7 @@
     --popover-foreground: 215 28% 17%;
     --card: 0 0% 100%;
     --card-foreground: 215 28% 17%;
+    --radius: 0.5rem;
   }
   .forest {
     --border: 0 2% 82%;
@@ -252,6 +263,7 @@
     --popover-foreground: 0 2% 82%;
     --card: 0 12% 8%;
     --card-foreground: 0 2% 82%;
+    --radius: 1.9rem;
   }
   .garden {
     --border: 0 3% 6%;
@@ -273,6 +285,7 @@
     --popover-foreground: 0 3% 6%;
     --card: 0 4% 91%;
     --card-foreground: 0 3% 6%;
+    --radius: 0.5rem;
   }
   .halloween {
     --border: 0 0% 83%;
@@ -294,6 +307,7 @@
     --popover-foreground: 0 0% 83%;
     --card: 224 0% 13%;
     --card-foreground: 0 0% 83%;
+    --radius: 0.5rem;
   }
   .light {
     --border: 215 28% 17%;
@@ -315,6 +329,7 @@
     --popover-foreground: 215 28% 17%;
     --card: 0 0% 100%;
     --card-foreground: 215 28% 17%;
+    --radius: 0.5rem;
   }
   .lofi {
     --border: 0 0% 0%;
@@ -336,6 +351,7 @@
     --popover-foreground: 0 0% 0%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 0%;
+    --radius: 0.125rem;
   }
   .luxury {
     --border: 37 67% 58%;
@@ -357,6 +373,7 @@
     --popover-foreground: 37 67% 58%;
     --card: 240 10% 4%;
     --card-foreground: 37 67% 58%;
+    --radius: 0.5rem;
   }
   .pastel {
     --border: 224 -35% 20%;
@@ -378,6 +395,7 @@
     --popover-foreground: 224 -35% 20%;
     --card: 0 0% 100%;
     --card-foreground: 224 -35% 20%;
+    --radius: 1.9rem;
   }
   .retro {
     --border: 345 5% 15%;
@@ -399,6 +417,7 @@
     --popover-foreground: 345 5% 15%;
     --card: 44 47% 86%;
     --card-foreground: 345 5% 15%;
+    --radius: 0.4rem;
   }
   .synthwave {
     --border: 260 60% 98%;
@@ -420,6 +439,7 @@
     --popover-foreground: 260 60% 98%;
     --card: 253 58% 15%;
     --card-foreground: 260 60% 98%;
+    --radius: 0.5rem;
   }
   .valentine {
     --border: 344 38% 28%;
@@ -441,6 +461,7 @@
     --popover-foreground: 344 38% 28%;
     --card: 319 66% 94%;
     --card-foreground: 344 38% 28%;
+    --radius: 1.9rem;
   }
   .wireframe {
     --border: 224 -35% 20%;
@@ -462,6 +483,7 @@
     --popover-foreground: 224 -35% 20%;
     --card: 0 0% 100%;
     --card-foreground: 224 -35% 20%;
+    --radius: 0.2rem;
   }
   .autumn {
     --border: 0 0% 19%;
@@ -483,6 +505,7 @@
     --popover-foreground: 0 0% 19%;
     --card: 224 0% 95%;
     --card-foreground: 0 0% 19%;
+    --radius: 0.5rem;
   }
   .business {
     --border: 0 0% 83%;
@@ -504,6 +527,7 @@
     --popover-foreground: 0 0% 83%;
     --card: 224 0% 13%;
     --card-foreground: 0 0% 83%;
+    --radius: 0.125rem;
   }
   .acid {
     --border: 0 0% 20%;
@@ -525,6 +549,7 @@
     --popover-foreground: 0 0% 20%;
     --card: 224 0% 98%;
     --card-foreground: 0 0% 20%;
+    --radius: 1rem;
   }
   .lemonade {
     --border: 83 16% 19%;
@@ -546,6 +571,7 @@
     --popover-foreground: 83 16% 19%;
     --card: 83 82% 97%;
     --card-foreground: 83 16% 19%;
+    --radius: 0.5rem;
   }
   .night {
     --border: 222 9% 82%;
@@ -567,6 +593,7 @@
     --popover-foreground: 222 9% 82%;
     --card: 222 47% 11%;
     --card-foreground: 222 9% 82%;
+    --radius: 0.5rem;
   }
   .coffee {
     --border: 37 47% 57%;
@@ -588,6 +615,7 @@
     --popover-foreground: 37 47% 57%;
     --card: 306 19% 11%;
     --card-foreground: 37 47% 57%;
+    --radius: 0.5rem;
   }
   .winter {
     --border: 214 30% 32%;
@@ -609,6 +637,7 @@
     --popover-foreground: 214 30% 32%;
     --card: 0 0% 100%;
     --card-foreground: 214 30% 32%;
+    --radius: 0.5rem;
   }
   .dim {
     --border: 197 31% 77%;
@@ -630,6 +659,7 @@
     --popover-foreground: 197 31% 77%;
     --card: 220 18% 20%;
     --card-foreground: 197 31% 77%;
+    --radius: 0.5rem;
   }
   .nord {
     --border: 220 16% 22%;
@@ -651,6 +681,7 @@
     --popover-foreground: 220 16% 22%;
     --card: 217 27% 94%;
     --card-foreground: 220 16% 22%;
+    --radius: 0.2rem;
   }
   .sunset {
     --border: 208 34% 72%;
@@ -672,5 +703,6 @@
     --popover-foreground: 208 34% 72%;
     --card: 204 31% 10%;
     --card-foreground: 208 34% 72%;
+    --radius: 0.8rem;
   }
 }
